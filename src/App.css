@@ -1,38 +1,209 @@
-.App {
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: auto !important;
+}
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(303.01deg, #5961f8 -4.4%, #f2d9f7 111.29%);
+  border-radius: 12px;
+}
+body {
+  background: #06051a !important;
+}
+#root {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sign-up-outer-main-sec {
+  padding: 64px;
+}
+.logo-header {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51.4043px;
+  line-height: 150%;
+  background: linear-gradient(303.01deg, #5961f8 -4.4%, #f2d9f7 111.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.disp-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2941px;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+  background: linear-gradient(303.01deg, #5961f8 -4.4%, #f2d9f7 111.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.card-bg-outer {
+  background: radial-gradient(
+        145.46% 122.03% at 88.28% 10.25%,
+        rgba(222, 164, 242, 0.1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        93.02% 80.9% at 22.44% 86.73%,
+        rgba(110, 111, 248, 0.1) 0%,
+        rgba(110, 111, 248, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(
+      131.02deg,
+      rgba(104, 108, 248, 0.059) 10.34%,
+      rgba(236, 171, 241, 0.059) 90.18%
+    ),
+    #060519;
+  border-radius: 20px;
+  color: #c8d8ff;
+}
+.color-5C6D8E {
+  color: #5c6d8e;
+}
+.color-4B4E70 {
+  color: #4b4e70;
+}
+.color-5961F8,
+.sign-up-form-inner-div .form-text {
+  color: linear-gradient(
+    rgba(89, 97, 248, 1) 100%,
+    rgba(242, 217, 247, 1) 100%
+  ) !important;
+  text-decoration: none !important;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.form-text {
+  color: rgb(161 208 255 / 75%) !important;
+}
+.PhoneInputInput,
+.form-control {
+  margin-left: 16px !important;
+  height: 40px !important;
+  border: 1px solid #7e84bc !important;
+  background: transparent !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  line-height: 16px !important;
+  color: #c8d8ff !important;
+}
+.get-opt-btn {
+  background: linear-gradient(
+    165.69deg,
+    rgba(104, 108, 248, 0.7) 4.49%,
+    rgba(236, 171, 241, 0.7) 113.71%
+  );
+  border-radius: 5px;
+  color: white;
+  height: 50px;
+  border-radius: 6px;
+  margin-top: 32px;
+}
+.other-signin-outer {
+  gap: 12%;
+}
+.google {
+  width: 45%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 6px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-form {
+  padding: 50px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-btn {
+  font-size: 27px;
+  border: 1px solid;
+  border-radius: 6px;
+  line-height: 0;
+  padding: 6px;
+}
+.navigate-button
+{
+  align-items: flex-end;
+}
+.image-upl-outer{
+  margin: 12px;
+  border: 1px solid #352b56;
+  height: 100%;
+  border-radius: 12px;
+  padding: 24px;
+}
+.header-store{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.links-nav
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 12px;
+  color: #4b4e70;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(255, 255, 255, 0.87);
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid rgb(255 255 255 / 42%);
+} 
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(255 255 255 / 60%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-1g12qau-MuiSvgIcon-root-MuiNativeSelect-icon {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 0.5em);
+    pointer-events: none;
+    color: rgb(255 255 255 / 54%);
 }
