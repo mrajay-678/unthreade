@@ -6,12 +6,14 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import 'animate.css';
+
 const SignUp = () => {
   const [value, setValue] = useState();
   const [otp, setotp] = useState(false);
   return (
     <div
-      className="container-fluid d-flex justify-content-center align-items-center p-0 m-0 bg-image"
+      className="container-fluid animate__animated  animate__fadeInDownBig d-flex justify-content-center align-items-center p-0 m-0 bg-image"
       style={{
         backgroundImage: `url(${background})`,
         backgroundPosition: "bottom",
